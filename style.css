@@ -85,7 +85,17 @@ z-index: 1;
     color: white;
     padding: 10px;
     border-radius: 30px;
+    cursor: pointer;
+border: solid purple 1px;
+}
 
+
+
+.Categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: solid purple 1px;
 }
 .sale-image img{
     width: 100%;
@@ -102,7 +112,24 @@ z-index: 1;
     position: absolute;
     top:10%;
     left: 10%;
+    animation-name:zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 
+
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+
+
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .recommended{
     padding: 10px;
